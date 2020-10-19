@@ -1,0 +1,16 @@
+package curso_java.operadores;
+
+//declaração da minha classe
+public class OperadoresRelacionais {
+	//minha classe principal
+	public static void main(String[] args) {
+		//comparando com números
+		System.out.println(2 > 1);//2 é maior que 1?
+		System.out.println(1 < 1);//1 é menor que 1?
+		System.out.println(1 <= 1);//1 é menor ou igual a 1?
+		System.out.println(1 >= 2);//1 é maior ou igual a 2?
+		System.out.println(2 == 2);// 2 é igual a 2?
+		System.out.println(1 != 2);// 1 é diferente de 2?
+	}
+
+}
