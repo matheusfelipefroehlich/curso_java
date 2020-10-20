@@ -6,11 +6,14 @@ public class Exemplo4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		loop: while (true) {
 		System.out.println("_______________________");
 		System.out.println(" Auto Escola JAVA");
 		System.out.println("__________MENU_________");
 		System.out.println("1 - APTO A DIRIGIR");
 		System.out.println("2 - TURMAS DISPONÍVEIS");
+		System.out.println("3 - Voltar");
+		System.out.println("4 - Sair");
 		int menu = Integer.parseInt(sc.nextLine());
 
 		switch (menu) {
@@ -32,8 +35,8 @@ public class Exemplo4 {
 			} else {
 				System.out.println(nome + " Você não está apto para dirigir!");
 			}
-			break;
-
+			continue;
+			
 		case 2:
 			System.out.println("Quantas pessoas querem tirar a cnh?");
 			int numeroPessoas = Integer.parseInt(sc.nextLine());
@@ -42,11 +45,18 @@ public class Exemplo4 {
 			} else {
 				System.out.println("Não há vagas");
 			}
-			break;
-		default:
+			continue;
+			
+		case 3:
+			continue;
+			
+		case 4:
+			break loop;
+				default:
 			System.out.println("Opção inválida");
-			break;
-		}
-		//>
+			continue;
+		   }
+		}//>
 	}
 }
+	
