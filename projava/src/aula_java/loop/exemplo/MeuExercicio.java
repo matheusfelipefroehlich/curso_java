@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MeuExercicio {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {//teste 2
 		Scanner sc = new Scanner(System.in);
 		float valorTotal = 0;
 		loop: while (true) {
